@@ -1,3 +1,3 @@
 export default function page() {
-  return <div>테스트</div>;
+  return <div>로딩 중</div>;
 }
