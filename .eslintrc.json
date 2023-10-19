@@ -27,6 +27,7 @@
     "prettier"
   ],
   "rules": {
+    "consistent-return": "off",
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": [
       "warn",
