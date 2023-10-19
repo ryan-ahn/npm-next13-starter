@@ -1,3 +1,9 @@
+import Button from '@components/atoms/customButton';
+
 export default function page() {
-  return <div>테스트</div>;
+  return (
+    <div>
+      <Button />
+    </div>
+  );
 }

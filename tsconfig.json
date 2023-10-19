@@ -22,15 +22,41 @@
         "name": "next"
       }
     ],
+    "baseUrl": "./app",
     "paths": {
-      "@/*": [
-        "./*"
+      "@components/*": [
+        "./_components/*"
+      ],
+      "@constants/*": [
+        "./_constants/*"
+      ],
+      "@containers/*": [
+        "./_containers/*"
+      ],
+      "@hooks/*": [
+        "./_hooks/*"
+      ],
+      "@interface/*": [
+        "./_interface/*"
+      ],
+      "@lib/*": [
+        "./_lib/*"
+      ],
+      "@store/*": [
+        "./_store/*"
+      ],
+      "@styles/*": [
+        "./_styles/*"
+      ],
+      "@utils/*": [
+        "./_utils/*"
       ]
     }
   },
   "include": [
     "next.config.js",
     "next-env.d.ts",
+    "**/*.js",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts"
