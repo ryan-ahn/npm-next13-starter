@@ -39,9 +39,6 @@
       "@interface/*": [
         "./_interface/*"
       ],
-      "@lib/*": [
-        "./_lib/*"
-      ],
       "@store/*": [
         "./_store/*"
       ],
