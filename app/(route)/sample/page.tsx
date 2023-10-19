@@ -1,12 +1,12 @@
 'use client';
 
 import styled from 'styled-components';
-import MainContainer from '@containers/main';
+import SampleContainer from '@containers/sample';
 
 export default function Home() {
   return (
     <Wrapper>
-      <MainContainer />
+      <SampleContainer />
     </Wrapper>
   );
 }
