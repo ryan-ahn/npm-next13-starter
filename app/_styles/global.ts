@@ -17,11 +17,6 @@ export const GlobalStyle = createGlobalStyle`
     border: none;
     outline: none;
   }
-  button {
-    &:active{
-      transform: scale(0.98);
-    }
-  }
   textarea {
     border: none;
     outline: none;
@@ -29,10 +24,15 @@ export const GlobalStyle = createGlobalStyle`
     overflow: auto;
     resize: none;
   }
+  ul {
+    list-style: none;
+  }
+  li {
+    list-style-type : none;
+  }
   :focus{
     outline: none;
   }
-
   @keyframes skeleton-ui{
     0%{
       background-color: rgba(185, 185, 185, 0.1);
