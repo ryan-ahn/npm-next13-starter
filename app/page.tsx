@@ -1,3 +1,11 @@
+'use client';
+
+import styled from 'styled-components';
+
 export default function Home() {
-  return <main>123</main>;
+  return <Wrapper>123</Wrapper>;
 }
+
+const Wrapper = styled.div`
+  color: red;
+`;

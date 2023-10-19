@@ -20,7 +20,6 @@ export const GlobalStyle = createGlobalStyle`
   textarea {
     border: none;
     outline: none;
-    font-family: 'Noto', sans-serif;
     overflow: auto;
     resize: none;
   }
