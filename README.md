@@ -8,6 +8,7 @@
   "_components": "components",
   "_containers": "container",
   "_interface": "interface",
+  "_lib": "lib",
   "_utils": "utils",
   "_hooks": "hook",
   "(route)": "routes",
