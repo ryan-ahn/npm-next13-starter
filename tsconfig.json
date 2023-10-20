@@ -22,31 +22,30 @@
         "name": "next"
       }
     ],
-    "baseUrl": "./app",
     "paths": {
       "@components/*": [
-        "./_components/*"
+        "./app/_components/*"
       ],
       "@constants/*": [
-        "./_constants/*"
+        "./app/_constants/*"
       ],
       "@containers/*": [
-        "./_containers/*"
+        "./app/_containers/*"
       ],
       "@hooks/*": [
-        "./_hooks/*"
+        "./app/_hooks/*"
       ],
       "@interface/*": [
-        "./_interface/*"
+        "./app/_interface/*"
       ],
       "@store/*": [
-        "./_store/*"
+        "./app/_store/*"
       ],
       "@styles/*": [
-        "./_styles/*"
+        "./app/_styles/*"
       ],
       "@utils/*": [
-        "./_utils/*"
+        "./app/_utils/*"
       ]
     }
   },

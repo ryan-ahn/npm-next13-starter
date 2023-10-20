@@ -1,9 +1,5 @@
 import { css } from 'styled-components';
-import {
-  TAlignItems,
-  TFlexDirection,
-  TJustifyContent,
-} from '@interface/alias';
+import { TAlignItems, TFlexDirection, TJustifyContent } from '@interface/alias';
 
 // flex Set
 export const flexSet = (

@@ -11,4 +11,6 @@ export default function main() {
   );
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  color: red;
+`;
