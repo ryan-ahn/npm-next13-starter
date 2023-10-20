@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import { Registry as StyledComponentRegistry } from '@styles/registry';
+import { Registry } from '@styles/registry';
+import Gnb from '@components/molecules/navigator/gnb';
 import { META_PAGE } from '@constants/data/meta';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -18,7 +19,10 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body className={inter.className}>
-        <StyledComponentRegistry>{children}</StyledComponentRegistry>
+        <Registry>
+          <Gnb />
+          {children}
+        </Registry>
       </body>
     </html>
   );
