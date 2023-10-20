@@ -1,9 +1,9 @@
-"use client";
+'use client';
 
-import React, { useState } from "react";
-import { useServerInsertedHTML } from "next/navigation";
-import { ServerStyleSheet, StyleSheetManager } from "styled-components";
-import { GlobalStyle } from "@styles/global";
+import React, { useState } from 'react';
+import { useServerInsertedHTML } from 'next/navigation';
+import { ServerStyleSheet, StyleSheetManager } from 'styled-components';
+import { GlobalStyle } from '@styles/global';
 
 export function Registry({ children }: { children: React.ReactNode }) {
   const [sheet] = useState(() => new ServerStyleSheet());
@@ -14,7 +14,7 @@ export function Registry({ children }: { children: React.ReactNode }) {
     return <>{styles}</>;
   });
 
-  if (typeof document !== "undefined") {
+  if (typeof document !== 'undefined') {
     return <>{children}</>;
   }
 

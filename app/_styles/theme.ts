@@ -1,10 +1,10 @@
-import { DefaultTheme } from "styled-components";
-import { flexSet, fontSet, backgroundSet } from "./mixin";
+import { DefaultTheme } from 'styled-components';
+import { flexSet, fontSet, backgroundSet } from './mixin';
 
-const myTheme: DefaultTheme = {
+const theme: DefaultTheme = {
   flexSet,
   fontSet,
   backgroundSet,
 };
 
-export default myTheme;
+export default theme;

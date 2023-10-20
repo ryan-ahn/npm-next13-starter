@@ -1,16 +1,13 @@
-"use client";
+'use client';
 
-import styled from "styled-components";
-import MainContainer from "@containers/main";
+import { ThemeProvider } from 'styled-components';
+import theme from '@styles/theme';
+import MainContainer from '@containers/main';
 
 export default function main() {
   return (
-    <Wrapper>
+    <ThemeProvider theme={theme}>
       <MainContainer />
-    </Wrapper>
+    </ThemeProvider>
   );
 }
-
-const Wrapper = styled.div`
-  color: red;
-`;

@@ -1,9 +1,11 @@
-"use client";
+'use client';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export default function gnb() {
-  return <Wrapper>33</Wrapper>;
+  return <Wrapper>123</Wrapper>;
 }
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+  ${theme => theme.flexSet('center', 'center', 'row')}
+`;

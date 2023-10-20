@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import styled from "styled-components";
-import SampleContainer from "@containers/sample";
+import styled from 'styled-components';
+import SampleContainer from '@containers/sample';
 
 export default function Home() {
   return (
