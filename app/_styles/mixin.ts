@@ -35,6 +35,12 @@ export const fontSet = (
   line-height: ${lineHeight}px;
 `;
 
+// Color Set
+export const colorSet = (color: string, background: string) => css`
+  color: ${color};
+  background: ${background};
+`;
+
 // Background Set
 export const backgroundSet = (url: string, size: string = 'cover') => css`
   background-image: url(${url});

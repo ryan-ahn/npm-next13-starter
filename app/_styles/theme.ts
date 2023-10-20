@@ -1,10 +1,13 @@
-import { DefaultTheme } from 'styled-components';
-import { flexSet, fontSet, backgroundSet } from './mixin';
+import baseStyled, { ThemedStyledFunction } from 'styled-components';
+import { flexSet, boxSet, fontSet, colorSet, backgroundSet } from './mixin';
 
-const theme: DefaultTheme = {
+const theme = {
   flexSet,
+  boxSet,
   fontSet,
+  colorSet,
   backgroundSet,
 };
 
-export default theme;
+export type TTheme = typeof theme;
+export const styled = baseStyled as ThemedStyledFunction<TTheme>;
