@@ -1,3 +1,3 @@
-import useDataStore from '@store/useDataStore';
+import useDataStore from "@store/useDataStore";
 
 export { useDataStore };

@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export default function CustomButton() {
   return <Wrapper>12333</Wrapper>;

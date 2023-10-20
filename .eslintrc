@@ -124,6 +124,6 @@
         "exports": "always-multiline",
         "functions": "always-multiline"
       }
-    ],
+    ]
   }
 }
