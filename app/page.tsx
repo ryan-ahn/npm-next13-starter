@@ -3,7 +3,7 @@
 import styled from 'styled-components';
 import MainContainer from '@containers/main';
 
-export default function Main() {
+export default function main() {
   return (
     <Wrapper>
       <MainContainer />

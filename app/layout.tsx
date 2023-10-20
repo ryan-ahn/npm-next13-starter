@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   description: META_PAGE.main.description,
 };
 
-export default function rootLayout({ children }: { children: React.ReactNode }) {
+export default function rootLayout({ children }: { children: React.ReactNode; }) {
   return (
     <html lang="ko">
       <body className={inter.className}>
