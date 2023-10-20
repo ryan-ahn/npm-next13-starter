@@ -1,5 +1,8 @@
 {
   "name": "boilerplate-next13-view",
+  "engines": {
+    "node": "v18.18.2"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,10 +12,10 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "jotai": "^2.4.3",
     "next": "13.5.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zustand": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^20",
