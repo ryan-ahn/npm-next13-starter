@@ -97,17 +97,17 @@
             "position": "after"
           },
           {
+            "pattern": "@constants/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
             "pattern": "@containers/**",
             "group": "internal",
             "position": "after"
           },
           {
             "pattern": "@components/**",
-            "group": "internal",
-            "position": "after"
-          },
-          {
-            "pattern": "@constants/**",
             "group": "internal",
             "position": "after"
           }
