@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Registry as StyledComponentRegistry } from '@styles/registry';
+import { META_PAGE } from '@constants/data/meta';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Boiler Plate',
-  description: 'create next app',
+  title: META_PAGE.main.title,
+  description: META_PAGE.main.description,
 };
 
 export default function RootLayout({
