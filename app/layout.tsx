@@ -4,18 +4,16 @@ import { Registry } from '@styles/registry';
 import Gnb from '@components/molecules/navigator/gnb';
 import { META_PAGE } from '@constants/data/meta';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({
+  subsets: ['latin'],
+});
 
 export const metadata: Metadata = {
   title: META_PAGE.main.title,
   description: META_PAGE.main.description,
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function rootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
       <body className={inter.className}>

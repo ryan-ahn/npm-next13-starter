@@ -3,8 +3,8 @@
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint",
-    "prettier",
-    "import"
+    "import",
+    "newline"
   ],
   "parserOptions": {
     "project": "./tsconfig.json",
@@ -23,9 +23,7 @@
     "airbnb-typescript",
     "airbnb/hooks",
     "next/core-web-vitals",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended",
-    "prettier"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     // 충돌 제거
@@ -36,6 +34,29 @@
     "import/prefer-default-export": "off",
     "@typescript-eslint/no-shadow": "off",
     "@typescript-eslint/no-use-before-define": "off",
+    // 탭 길이 설정
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 500
+      }
+    ],
+    // 세미 콜론
+    "semi": [
+      2,
+      "always"
+    ],
+    "semi-style": [
+      "error",
+      "last"
+    ],
     // 파일명 이슈 해결
     "react/jsx-filename-extension": [
       "warn",
@@ -58,7 +79,6 @@
           "sibling",
           "index"
         ],
-        // 절대경로 순서 정렬
         "pathGroups": [
           {
             "pattern": "@styles/**",
@@ -103,5 +123,96 @@
         ]
       }
     ],
-  }
+    // import 2개 이상시 줄바꿈 처리
+    "newline/import-module": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    // 객체 구조분해할당 프로퍼티 2개 이상시 줄바꿈 처리
+    "newline/object-property": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    // 배열이 2개 이상일시 시작 브라켓 줄바꿈
+    "array-bracket-newline": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    // 배열이 2개 이상일시 요소 줄바꿈
+    "array-element-newline": [
+      "error",
+      {
+        "minItems": 2
+      }
+    ],
+    // 배열,객체,가져오기,내보내기 멀티라인일시 마지막에 콤마
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "always-multiline"
+      }
+    ],
+    // 구조분해할당, 가져오기, 내보내기 프로퍼티 2개 이상일시 멀티라인 적용
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": {
+          "multiline": true,
+          "minProperties": 1
+        },
+        "ObjectPattern": {
+          "multiline": true,
+          "minProperties": 2
+        },
+        "ImportDeclaration": {
+          "multiline": true,
+          "minProperties": 2
+        },
+        "ExportDeclaration": {
+          "multiline": true,
+          "minProperties": 2
+        }
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "src/containers /**/*.test.{j,t}s?(x)"
+      ],
+      "env": {
+        "jest": true
+      }
+    },
+    {
+      "files": [
+        "**/*.tsx"
+      ],
+      "rules": {
+        // 함수,변수 카멜 케이스 룰 적용
+        "@typescript-eslint/naming-convention": [
+          "error",
+          {
+            "selector": [
+              "variable",
+              "function"
+            ],
+            "format": [
+              "camelCase"
+            ]
+          }
+        ]
+      }
+    }
+  ]
 }
