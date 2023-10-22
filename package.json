@@ -1,7 +1,7 @@
 {
   "name": "boilerplate-next13-view",
   "engines": {
-    "node": "v18.18.2"
+    "node": "v18.16.0"
   },
   "version": "0.1.0",
   "private": true,
