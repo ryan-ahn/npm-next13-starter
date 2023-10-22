@@ -12,7 +12,6 @@ import theme from '@styles/theme';
 
 export function Registry({ children }: { children: React.ReactNode }) {
   const [sheet] = useState(() => new ServerStyleSheet());
-
   useServerInsertedHTML(() => {
     const styles = sheet.getStyleElement();
     sheet.instance.clearTag();
@@ -22,7 +21,6 @@ export function Registry({ children }: { children: React.ReactNode }) {
   if (typeof document !== 'undefined') {
     return <>{children}</>;
   }
-
   return (
     <StyleSheetManager sheet={sheet.instance}>
       <GlobalStyle />
