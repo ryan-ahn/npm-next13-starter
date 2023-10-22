@@ -26,14 +26,6 @@
 - **Store** : Zustand
 
 ## Code Pattern
-- **interface** - 객체 타입 지정 <br/>
-- **layouts** - 고정 영역(device단위 또는 gnb,lnb) <br/>
-- **server** - 넉스트의 서버 사이드 컨트롤 <br/>
-- **store** - 전역 관리 스토어<br/>
-- **styles** - css 코드 및 mixin 셋<br/>
-- **utils** - hooks, helper, handler <br/>
-- **(routes)** - 페이지 컴포넌트(seo) <br/>
-
 - **Static(public)**
 - **Root(src)** <br/>
 - ⎣&nbsp;**_components** - 최소 단위 컴포넌트(atom, molecule, organism) <br/>
