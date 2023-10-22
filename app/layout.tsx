@@ -5,6 +5,7 @@ import { META_PAGE } from '@constants/data/meta';
 import Gnb from '@components/molecules/navigator/gnb';
 
 export const metadata: Metadata = {
+  icons: '/static/icons/logo.png',
   title: META_PAGE.default.title,
   description: META_PAGE.default.description,
   keywords: META_PAGE.default.keywords,
