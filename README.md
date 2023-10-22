@@ -63,7 +63,7 @@ setting.json 파일을 vscode 세팅에 입력
 
 // 관련 익스텐션 전부 설치(문서 확인)
 ```
-### 3) Run development server
+### 3) Run Project
 ```shell
 npm run dev
 ```
