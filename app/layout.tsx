@@ -5,8 +5,9 @@ import { META_PAGE } from '@constants/data/meta';
 import Gnb from '@components/molecules/navigator/gnb';
 
 export const metadata: Metadata = {
-  title: META_PAGE.main.title,
-  description: META_PAGE.main.description,
+  title: META_PAGE.default.title,
+  description: META_PAGE.default.description,
+  keywords: META_PAGE.default.keywords,
 };
 
 export default function rootLayout({ children }: IRootLayout) {
