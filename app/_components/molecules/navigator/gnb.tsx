@@ -14,7 +14,7 @@ export default function gnb() {
         width={50}
         height={40}
       />
-      <CustomButton />
+      <CustomButton text="테스트" width="70px" height="35px" color="#6f86d6" />
     </Wrapper>
   );
 }
