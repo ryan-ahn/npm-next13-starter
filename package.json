@@ -1,7 +1,10 @@
 {
   "name": "boilerplate-next13-view",
+  "author": {
+    "name": "github.com/ryan-ahn"
+  },
   "engines": {
-    "node": "v18.16.0"
+    "node": "v18.18.2"
   },
   "version": "0.1.0",
   "private": true,
@@ -9,6 +12,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "deploy": "vercel deploy",
     "lint": "next lint"
   },
   "dependencies": {
@@ -39,6 +43,7 @@
     "prettier": "3.0.3",
     "styled-components": "^6.1.0",
     "styled-reset": "^4.5.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "vercel": "^32.5.0"
   }
 }
