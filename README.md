@@ -27,15 +27,15 @@
 
 ## Code Pattern
 - **Static(public)**
-- **Root(src)** <br/>
-- ⎣&nbsp;**_components** - 최소 단위 컴포넌트(atom, molecule, organism) <br/>
-- ⎣&nbsp;**_constants** - 정적 데이터(텍스트, 상수 등) <br/>
-- ⎣&nbsp;**_containers** - 비즈니스 로직 컴포넌트 <br/>
-- ⎣&nbsp;**_interface** - 객체 타입 지정 <br/>
-- ⎣&nbsp;**_hooks** - 커스텀 훅 <br/>
-- ⎣&nbsp;**_store** - 전역 스토어 <br/>
-- ⎣&nbsp;**_styles** - 스타일 모음<br/>
-- ⎣&nbsp;**_utils** - 라이브러리, 유틸리티<br/>
+- **Root(app)** <br/>
+- ⎣&nbsp;**components** - 최소 단위 컴포넌트(atom, molecule, organism) <br/>
+- ⎣&nbsp;**constants** - 정적 데이터(텍스트, 상수 등) <br/>
+- ⎣&nbsp;**containers** - 비즈니스 로직 컴포넌트 <br/>
+- ⎣&nbsp;**interface** - 객체 타입 지정 <br/>
+- ⎣&nbsp;**hooks** - 커스텀 훅 <br/>
+- ⎣&nbsp;**store** - 전역 스토어 <br/>
+- ⎣&nbsp;**styles** - 스타일 모음<br/>
+- ⎣&nbsp;**utils** - 라이브러리, 유틸리티<br/>
 
 
 ## Getting Started
