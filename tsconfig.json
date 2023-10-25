@@ -24,28 +24,28 @@
     ],
     "paths": {
       "@components/*": [
-        "./app/_components/*"
+        "./app/components/*"
       ],
       "@constants/*": [
-        "./app/_constants/*"
+        "./app/constants/*"
       ],
       "@containers/*": [
-        "./app/_containers/*"
+        "./app/containers/*"
       ],
       "@hooks/*": [
-        "./app/_hooks/*"
+        "./app/hooks/*"
       ],
       "@interface/*": [
-        "./app/_interface/*"
+        "./app/interface/*"
       ],
       "@store/*": [
-        "./app/_store/*"
+        "./app/store/*"
       ],
       "@styles/*": [
-        "./app/_styles/*"
+        "./app/styles/*"
       ],
       "@utils/*": [
-        "./app/_utils/*"
+        "./app/utils/*"
       ]
     }
   },
