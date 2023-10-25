@@ -45,27 +45,13 @@ git clone ryan-ahn/boilerplate-next13-view
 cd ryan-ahn/boilerplate-next13-view
 npm install
 ```
-### 2) Configuration VSCode
-```
-// 기본 세팅
-setting.json 파일을 vscode 세팅에 입력
-
-// Material 아이콘 세팅
-"material-icon-theme.folders.associations": {
-  "_constants": "constant",
-  "_components": "components",
-  "_containers": "container",
-  "_interface": "interface",
-  "_utils": "utils",
-  "_hooks": "hook",
-  "(route)": "routes",
-}
-
-// 관련 익스텐션 전부 설치(문서 확인)
-```
-### 3) Run Project
+### 2) Run Project
 ```shell
 npm run dev
+```
+### 3) Run Deploy
+```shell
+npm run deploy
 ```
 
 ## Using with Store
