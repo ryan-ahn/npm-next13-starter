@@ -39,7 +39,10 @@
     // 탭 길이 설정
     "indent": [
       "error",
-      2
+      2,
+      {
+        "SwitchCase": 1
+      }
     ],
     // 세미 콜론
     "semi": [
