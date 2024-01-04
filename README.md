@@ -42,7 +42,7 @@
 ### 1) Installation
 ```shell
 git clone ryan-ahn/boilerplate-next13-client
-cd ryan-ahn/boilerplate-next13-view
+cd ryan-ahn/boilerplate-next13-client
 npm install
 ```
 ### 2) Run Project
