@@ -2,7 +2,7 @@
 
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-next13-view)
+![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-next13-client)
 
 ## Features
 - [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Turbo)
@@ -41,7 +41,7 @@
 ## Getting Started
 ### 1) Installation
 ```shell
-git clone ryan-ahn/boilerplate-next13-view
+git clone ryan-ahn/boilerplate-next13-client
 cd ryan-ahn/boilerplate-next13-view
 npm install
 ```
