@@ -19,7 +19,7 @@
 - [ ] 🪄&nbsp;&nbsp;Dark Mode
 - [ ] 📱&nbsp;&nbsp;Check Device
 
-## Framworks
+## Frameworks
 - **Bundler** : Turbo
 - **SSR** : Next3
 - **Core** : React18
