@@ -25,7 +25,7 @@
 - **Core** : React18
 - **Store** : Zustand
 
-## Code Pattern
+## Code Structure
 - **Static(public)**
 - **Root(app)** <br/>
 - ⎣&nbsp;**components** - 최소 단위 컴포넌트(atom, molecule, organism) <br/>
