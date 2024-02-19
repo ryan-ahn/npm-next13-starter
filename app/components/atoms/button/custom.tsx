@@ -5,7 +5,7 @@ import { flexSet, boxSet, colorSet, fontSet } from '@styles/mixin';
 import { ICustomButtonProps } from '@interface/props';
 import { ICustomButtonContentBox } from '@interface/attribute';
 
-export default function CustomButton({
+export default function customButton({
   width,
   height,
   color,

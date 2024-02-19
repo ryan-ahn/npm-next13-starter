@@ -39,7 +39,7 @@
         "./app/interface/*"
       ],
       "@store/*": [
-        "./app/store/*"
+        "app/libs/store/*"
       ],
       "@styles/*": [
         "./app/styles/*"

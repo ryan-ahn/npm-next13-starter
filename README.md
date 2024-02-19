@@ -28,14 +28,12 @@
 ## Code Structure
 - **Static(public)**
 - **Root(app)** <br/>
-- ⎣&nbsp;**components** - 최소 단위 컴포넌트(atom, molecule, organism) <br/>
-- ⎣&nbsp;**constants** - 정적 데이터(텍스트, 상수 등) <br/>
-- ⎣&nbsp;**containers** - 비즈니스 로직 컴포넌트 <br/>
-- ⎣&nbsp;**interface** - 객체 타입 지정 <br/>
-- ⎣&nbsp;**hooks** - 커스텀 훅 <br/>
-- ⎣&nbsp;**store** - 전역 스토어 <br/>
+- ⎣&nbsp;**components** - stateless components <br/>
+- ⎣&nbsp;**constants** - static data <br/>
+- ⎣&nbsp;**containers** - stateful components <br/>
+- ⎣&nbsp;**interface** - interfaces <br/>
+- ⎣&nbsp;**libs** - store, hooks, utils <br/>
 - ⎣&nbsp;**styles** - 스타일 모음<br/>
-- ⎣&nbsp;**utils** - 라이브러리, 유틸리티<br/>
 
 
 ## Getting Started
