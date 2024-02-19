@@ -29,6 +29,7 @@
 - **Static(public)**
 - **Root(app)** <br/>
 - ⎣&nbsp;**components** - stateless components <br/>
+- ⎣&nbsp;**config** - configure <br/>
 - ⎣&nbsp;**constants** - static data <br/>
 - ⎣&nbsp;**containers** - stateful components <br/>
 - ⎣&nbsp;**interface** - interfaces <br/>

@@ -26,6 +26,9 @@
       "@components/*": [
         "./app/components/*"
       ],
+      "@config/*": [
+        "./app/config/*"
+      ],
       "@constants/*": [
         "./app/constants/*"
       ],

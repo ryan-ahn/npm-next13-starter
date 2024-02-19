@@ -32,8 +32,10 @@
     "react/jsx-no-useless-fragment": "off",
     "react-hooks/rules-of-hooks": "off",
     "react/no-children-prop": "off",
+    "import/no-anonymous-default-export": "off",
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
+    "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-shadow": "off",
     "@typescript-eslint/no-use-before-define": "off",
     // 탭 길이 설정
