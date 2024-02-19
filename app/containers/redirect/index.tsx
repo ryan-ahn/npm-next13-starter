@@ -5,10 +5,13 @@ import { flexSet, boxSet, colorSet, fontSet } from '@styles/mixin';
 import { CONTENT_PAGE } from '@constants/data/content';
 
 export default function redirectContainer() {
+  // variable
+  const content = CONTENT_PAGE.redirect.body;
+  /* default render */
   return (
     <StyledWrapper>
       <StyledContentBox>
-        <p>{CONTENT_PAGE.redirect.body}</p>
+        <p>{content}</p>
       </StyledContentBox>
     </StyledWrapper>
   );
@@ -16,7 +19,7 @@ export default function redirectContainer() {
 
 const StyledWrapper = styled.div`
   ${() => flexSet('center', 'center', 'row')};
-  ${() => boxSet('100%', 'calc(100vh - 80px)')};
+  ${() => boxSet('100%', 'calc(100vh - 60px)')};
   ${() => colorSet('white', '#101010')};
 `;
 

@@ -10,12 +10,10 @@ export default function gnb() {
   const content = CONTENT_PAGE.common.gnb;
   // hooks
   const router = useRouter();
-
-  /* function */
+  // functions
   const onClickLeftIcon = () => {
     router.push('/');
   };
-
   const onClickRightIcon = () => {
     router.push('/');
   };
@@ -25,6 +23,8 @@ export default function gnb() {
     <MoleculesNavigatorGnb
       leftIcon={content.leftIcon as TIconName}
       rightIcon={content.rightIcon as TIconName}
+      leftIconColor={content.leftIconColor}
+      rightIconColor={content.rightIconColor}
       leftOnClickFunction={onClickLeftIcon}
       rightOnClickFunction={onClickRightIcon}
     />

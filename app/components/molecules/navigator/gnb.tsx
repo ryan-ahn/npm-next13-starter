@@ -3,29 +3,24 @@
 import styled from 'styled-components';
 import { generateSvg } from '@libs/utils/generator/svg';
 import { boxSet, colorSet, flexSet } from '@styles/mixin';
-import theme from '@styles/theme';
-import { TIconName } from '@interface/alias';
-
-interface IDefault {
-  leftIcon: TIconName;
-  rightIcon: TIconName;
-  leftOnClickFunction: () => void;
-  rightOnClickFunction: () => void;
-}
+import { IMoleculesGnbNavigatorProps } from '@interface/props';
 
 export default function gnb({
   leftIcon,
   rightIcon,
+  leftIconColor,
+  rightIconColor,
   leftOnClickFunction,
   rightOnClickFunction,
-}: IDefault) {
+}: IMoleculesGnbNavigatorProps) {
+  /* default render */
   return (
     <StyledWrapper>
       <StyledIconBox onClick={leftOnClickFunction}>
-        {generateSvg(leftIcon, theme.theme01)}
+        {generateSvg(leftIcon, leftIconColor)}
       </StyledIconBox>
       <StyledIconBox onClick={rightOnClickFunction}>
-        {generateSvg(rightIcon, theme.theme01)}
+        {generateSvg(rightIcon, rightIconColor)}
       </StyledIconBox>
     </StyledWrapper>
   );
@@ -33,13 +28,13 @@ export default function gnb({
 
 const StyledWrapper = styled.div`
   ${() => flexSet('space-between', 'center', 'row')};
-  ${() => boxSet('100%', '80px')}
+  ${() => boxSet('100%', '60px')}
   ${() => colorSet('white', 'black')};
-  padding: 0 15px;
+  padding: 0 5px;
 `;
 
 const StyledIconBox = styled.button`
   ${() => boxSet('auto', '100%', '0px')};
-  padding: 20px;
+  padding: 14px;
   cursor: pointer;
 `;

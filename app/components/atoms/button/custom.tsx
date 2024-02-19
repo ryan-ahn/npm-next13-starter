@@ -2,13 +2,18 @@
 
 import styled from 'styled-components';
 import { flexSet, boxSet, colorSet, fontSet } from '@styles/mixin';
-import { ICustomButtonProps } from '@interface/props';
+import { IAtomsCustomButtonProps } from '@interface/props';
 import { ICustomButtonContentBox } from '@interface/attribute';
 
-export default function customButton({ color, text }: ICustomButtonProps) {
+export default function customButton({
+  color,
+  text,
+  onClickFunction,
+}: IAtomsCustomButtonProps) {
+  /* default render */
   return (
     <Wrapper>
-      <ContentBox $color={color}>
+      <ContentBox $color={color} onClick={onClickFunction}>
         <p>{text}</p>
       </ContentBox>
     </Wrapper>
@@ -22,8 +27,9 @@ const Wrapper = styled.button`
 const ContentBox = styled.div<ICustomButtonContentBox>`
   ${() => flexSet('center', 'center', 'row')};
   ${() => boxSet('auto', 'auto', '50px')};
-  padding: 15px 20px;
   ${props => colorSet('white', props.$color)};
+  padding: 15px 20px;
+  cursor: pointer;
   & > p {
     ${() => fontSet(16, 500, 20)};
   }
