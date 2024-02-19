@@ -3,18 +3,18 @@ import { ISampleLayout } from '@interface/layout';
 import { META_PAGE } from '@constants/data/meta';
 
 export const metadata: Metadata = {
-  title: META_PAGE.default.title,
-  description: META_PAGE.default.description,
-  keywords: META_PAGE.default.keywords,
+  title: META_PAGE.redirect.title,
+  description: META_PAGE.redirect.description,
+  keywords: META_PAGE.redirect.keywords,
   openGraph: {
-    title: META_PAGE.default.title,
-    description: META_PAGE.default.description,
-    images: META_PAGE.default.ogImage,
+    title: META_PAGE.redirect.title,
+    description: META_PAGE.redirect.description,
+    images: META_PAGE.redirect.ogImage,
   },
   twitter: {
-    title: META_PAGE.default.title,
-    description: META_PAGE.default.description,
-    images: META_PAGE.default.ogImage,
+    title: META_PAGE.redirect.title,
+    description: META_PAGE.redirect.description,
+    images: META_PAGE.redirect.ogImage,
   },
 };
 

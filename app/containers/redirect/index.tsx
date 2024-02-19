@@ -2,16 +2,13 @@
 
 import styled from 'styled-components';
 import { flexSet, boxSet, colorSet, fontSet } from '@styles/mixin';
-// import { useAuthStore, useDataStore } from '@store/index';
 import { CONTENT_PAGE } from '@constants/data/content';
-import AtomsCustomButton from '@components/atoms/button/custom';
 
-export default function mainContainer() {
+export default function redirectContainer() {
   return (
     <StyledWrapper>
       <StyledContentBox>
-        <p>{CONTENT_PAGE.main.body}</p>
-        <AtomsCustomButton text="테스트" color="#6f86d6" />
+        <p>{CONTENT_PAGE.redirect.body}</p>
       </StyledContentBox>
     </StyledWrapper>
   );
@@ -24,7 +21,7 @@ const StyledWrapper = styled.div`
 `;
 
 const StyledContentBox = styled.div`
-  ${() => flexSet('center', 'center', 'column')};
+  ${() => flexSet('center', 'center', 'row')};
   white-space: pre-wrap;
   & > p {
     ${() => fontSet(50, 500, 60)};

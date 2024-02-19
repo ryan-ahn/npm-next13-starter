@@ -2,7 +2,8 @@ import type { Metadata } from 'next';
 import { Registry } from '@styles/registry';
 import { IRootLayout } from '@interface/layout';
 import { META_PAGE } from '@constants/data/meta';
-import Gnb from '@components/molecules/navigator/gnb';
+import Wrapper from '@containers/wrapper/page';
+import Gnb from '@containers/common/page/gnb';
 
 export const metadata: Metadata = {
   icons: '/static/icons/logo.png',
@@ -26,8 +27,10 @@ export default function rootLayout({ children }: IRootLayout) {
     <html lang="ko">
       <body>
         <Registry>
-          <Gnb />
-          {children}
+          <Wrapper>
+            <Gnb />
+            {children}
+          </Wrapper>
         </Registry>
       </body>
     </html>

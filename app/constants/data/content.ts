@@ -1,3 +1,17 @@
 export const CONTENT_PAGE = {
-  main: 'NEXT13\nSTARTER',
+  common: {
+    gnb: {
+      leftIcon: 'logoSymbol',
+      rightIcon: 'menuHamburger',
+    },
+  },
+  main: {
+    body: 'NEXT13\nSTARTER',
+  },
+  sample: {
+    body: 'SAMPLE\nPAGE',
+  },
+  redirect: {
+    body: 'Loading!!!!!',
+  },
 };

@@ -1,10 +1,12 @@
 'use client';
 
-import styled from 'styled-components';
+import { useEffect } from 'react';
 import { IRootLayout } from '@interface/layout';
 
-export default function page({ children }: IRootLayout) {
-  return <StyledWrapper>{children}</StyledWrapper>;
-}
+export default function wrapperContainer({ children }: IRootLayout) {
+  useEffect(() => {
+    console.log('hi');
+  }, []);
 
-const StyledWrapper = styled.div``;
+  return <>{children}</>;
+}

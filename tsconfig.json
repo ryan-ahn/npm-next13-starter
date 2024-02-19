@@ -32,21 +32,15 @@
       "@containers/*": [
         "./app/containers/*"
       ],
-      "@hooks/*": [
-        "./app/hooks/*"
-      ],
       "@interface/*": [
         "./app/interface/*"
       ],
-      "@store/*": [
-        "app/libs/store/*"
+      "@libs/*": [
+        "./app/libs/*"
       ],
       "@styles/*": [
         "./app/styles/*"
       ],
-      "@utils/*": [
-        "./app/utils/*"
-      ]
     }
   },
   "include": [

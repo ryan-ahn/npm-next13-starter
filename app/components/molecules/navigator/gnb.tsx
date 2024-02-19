@@ -1,32 +1,45 @@
 'use client';
 
 import styled from 'styled-components';
-import Image from 'next/image';
+import { generateSvg } from '@libs/utils/generator/svg';
 import { boxSet, colorSet, flexSet } from '@styles/mixin';
-import AtomsCustomButton from '@components/atoms/button/custom';
+import theme from '@styles/theme';
+import { TIconName } from '@interface/alias';
 
-export default function gnb() {
+interface IDefault {
+  leftIcon: TIconName;
+  rightIcon: TIconName;
+  leftOnClickFunction: () => void;
+  rightOnClickFunction: () => void;
+}
+
+export default function gnb({
+  leftIcon,
+  rightIcon,
+  leftOnClickFunction,
+  rightOnClickFunction,
+}: IDefault) {
   return (
-    <Wrapper>
-      <Image
-        src="/static/icons/logo.png"
-        alt="logo-text"
-        width={50}
-        height={40}
-      />
-      <AtomsCustomButton
-        text="테스트"
-        width="70px"
-        height="35px"
-        color="#6f86d6"
-      />
-    </Wrapper>
+    <StyledWrapper>
+      <StyledIconBox onClick={leftOnClickFunction}>
+        {generateSvg(leftIcon, theme.theme01)}
+      </StyledIconBox>
+      <StyledIconBox onClick={rightOnClickFunction}>
+        {generateSvg(rightIcon, theme.theme01)}
+      </StyledIconBox>
+    </StyledWrapper>
   );
 }
 
-const Wrapper = styled.div`
+const StyledWrapper = styled.div`
   ${() => flexSet('space-between', 'center', 'row')};
   ${() => boxSet('100%', '80px')}
   ${() => colorSet('white', 'black')};
-  padding: 0 20px;
+  padding: 0 15px;
+`;
+
+const StyledIconBox = styled.button`
+  ${() => boxSet('auto', '100%', '0px')};
+  padding: 20px;
+  cursor: pointer;
 `;

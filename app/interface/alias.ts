@@ -1,4 +1,3 @@
-// Type of Flex Set
 export type TJustifyContent =
   | 'flex-start'
   | 'flex-end'
@@ -19,3 +18,22 @@ export type TFlexDirection =
   | 'column'
   | 'row-reverse'
   | 'column-reverse';
+
+export type TIconName =
+  | 'logoSymbol'
+  | 'closeRound'
+  | 'menuAnalytics'
+  | 'menuUser'
+  | 'menuProduct'
+  | 'menuBlog'
+  | 'menuHamburger'
+  | 'avatarMan'
+  | 'avatarWoman'
+  | 'allUser'
+  | 'allMember'
+  | 'todayUser'
+  | 'todayMember'
+  | 'reset'
+  | 'stream'
+  | 'sheet'
+  | 'record';
