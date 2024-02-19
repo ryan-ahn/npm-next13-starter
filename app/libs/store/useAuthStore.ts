@@ -18,11 +18,13 @@ const useAuthStore = create<IAuthStoreState>()(
           }));
           jsCookie.set('access_token', 'token');
           set(() => ({
+            isLoggedIn: true,
             isLoadingUserSignIn: false,
             isFetchedUserSignIn: true,
           }));
         } catch (error: any) {
           set(() => ({
+            isLoggedIn: false,
             isLoadingUserSignIn: false,
             isFetchedUserSignIn: false,
           }));
@@ -36,11 +38,13 @@ const useAuthStore = create<IAuthStoreState>()(
           }));
           jsCookie.remove('access_token');
           set(() => ({
+            isLoggedIn: false,
             isLoadingUserSignOut: false,
             isFetchedUserSignOut: true,
           }));
         } catch (error: any) {
           set(() => ({
+            isLoggedIn: false,
             isLoadingUserSignOut: false,
             isFetchedUserSignOut: false,
           }));

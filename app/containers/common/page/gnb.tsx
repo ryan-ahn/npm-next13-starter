@@ -1,6 +1,8 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useCallback } from 'react';
+import { useAuthStore } from '@libs/store';
 import { TIconName } from '@interface/alias';
 import { CONTENT_PAGE } from '@constants/data/content';
 import MoleculesNavigatorGnb from '@components/molecules/navigator/gnb';
@@ -10,13 +12,20 @@ export default function gnb() {
   const content = CONTENT_PAGE.common.gnb;
   // hooks
   const router = useRouter();
-  // functions
-  const onClickLeftIcon = () => {
+  const { isLoggedIn, getAuthUserSignIn, getAuthUserSignOut } = useAuthStore();
+
+  /* functions */
+  const onClickUserSignIn = useCallback(async () => {
+    await getAuthUserSignIn();
+  }, []);
+
+  const onClickUserSignOut = useCallback(async () => {
+    await getAuthUserSignOut();
+  }, []);
+
+  const onClickRouteToMain = useCallback(() => {
     router.push('/');
-  };
-  const onClickRightIcon = () => {
-    router.push('/');
-  };
+  }, []);
 
   /* default render */
   return (
@@ -25,8 +34,8 @@ export default function gnb() {
       rightIcon={content.rightIcon as TIconName}
       leftIconColor={content.leftIconColor}
       rightIconColor={content.rightIconColor}
-      leftOnClickFunction={onClickLeftIcon}
-      rightOnClickFunction={onClickRightIcon}
+      leftOnClickFunction={onClickRouteToMain}
+      rightOnClickFunction={isLoggedIn ? onClickUserSignOut : onClickUserSignIn}
     />
   );
 }
