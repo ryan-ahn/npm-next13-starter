@@ -3,7 +3,8 @@ export const CONTENT_PAGE = {
     gnb: {
       leftIcon: 'logoSymbol',
       leftIconColor: 'white',
-      rightIcon: 'menuHamburger',
+      signInIcon: 'signin',
+      signOutIcon: 'signout',
       rightIconColor: 'white',
     },
   },

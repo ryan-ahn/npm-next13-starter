@@ -12,7 +12,8 @@ export default function gnb() {
   const content = CONTENT_PAGE.common.gnb;
   // hooks
   const router = useRouter();
-  const { isLoggedIn, getAuthUserSignIn, getAuthUserSignOut } = useAuthStore();
+  const { isLoggedIn, userDetail, getAuthUserSignIn, getAuthUserSignOut } =
+    useAuthStore();
 
   /* functions */
   const onClickUserSignIn = useCallback(async () => {
@@ -30,8 +31,13 @@ export default function gnb() {
   /* default render */
   return (
     <MoleculesNavigatorGnb
+      rightText={userDetail}
       leftIcon={content.leftIcon as TIconName}
-      rightIcon={content.rightIcon as TIconName}
+      rightIcon={
+        isLoggedIn
+          ? (content.signOutIcon as TIconName)
+          : (content.signInIcon as TIconName)
+      }
       leftIconColor={content.leftIconColor}
       rightIconColor={content.rightIconColor}
       leftOnClickFunction={onClickRouteToMain}

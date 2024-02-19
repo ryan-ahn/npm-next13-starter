@@ -7,16 +7,22 @@ const useAuthStore = create<IAuthStoreState>()(
   devtools(
     set => ({
       isLoggedIn: false,
+      userDetail: null,
       isLoadingUserSignIn: false,
       isFetchedUserSignIn: false,
       isLoadingUserSignOut: false,
       isFetchedUserSignOut: false,
+      isLoadingUserDetail: false,
+      isFetchedUserDetail: false,
       getAuthUserSignIn: async () => {
         try {
           set(() => ({
             isLoadingUserSignIn: true,
           }));
-          jsCookie.set('access_token', 'token');
+          // api
+          jsCookie.set('access_token', 'token', {
+            expires: 7,
+          });
           set(() => ({
             isLoggedIn: true,
             isLoadingUserSignIn: false,
@@ -36,9 +42,11 @@ const useAuthStore = create<IAuthStoreState>()(
           set(() => ({
             isLoadingUserSignOut: true,
           }));
+          // api
           jsCookie.remove('access_token');
           set(() => ({
             isLoggedIn: false,
+            userDetail: null,
             isLoadingUserSignOut: false,
             isFetchedUserSignOut: true,
           }));
@@ -47,6 +55,27 @@ const useAuthStore = create<IAuthStoreState>()(
             isLoggedIn: false,
             isLoadingUserSignOut: false,
             isFetchedUserSignOut: false,
+          }));
+          throw Error(error.message);
+        }
+      },
+      getAuthUserDetail: async () => {
+        try {
+          set(() => ({
+            isLoadingUserSignIn: true,
+          }));
+          // api
+          set(() => ({
+            isLoggedIn: true,
+            userDetail: 'ryan',
+            isLoadingUserSignIn: false,
+            isFetchedUserSignIn: true,
+          }));
+        } catch (error: any) {
+          set(() => ({
+            isLoggedIn: false,
+            isLoadingUserSignIn: false,
+            isFetchedUserSignIn: false,
           }));
           throw Error(error.message);
         }

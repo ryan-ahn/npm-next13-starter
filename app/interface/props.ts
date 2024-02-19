@@ -7,6 +7,7 @@ export interface IAtomsCustomButtonProps {
 }
 
 export interface IMoleculesGnbNavigatorProps {
+  rightText: string;
   leftIcon: TIconName;
   rightIcon: TIconName;
   leftIconColor: string;

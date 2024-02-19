@@ -19,21 +19,4 @@ export type TFlexDirection =
   | 'row-reverse'
   | 'column-reverse';
 
-export type TIconName =
-  | 'logoSymbol'
-  | 'closeRound'
-  | 'menuAnalytics'
-  | 'menuUser'
-  | 'menuProduct'
-  | 'menuBlog'
-  | 'menuHamburger'
-  | 'avatarMan'
-  | 'avatarWoman'
-  | 'allUser'
-  | 'allMember'
-  | 'todayUser'
-  | 'todayMember'
-  | 'reset'
-  | 'stream'
-  | 'sheet'
-  | 'record';
+export type TIconName = 'logoSymbol' | 'signin' | 'signout';

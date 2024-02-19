@@ -13,7 +13,8 @@ export default function sampleContainer() {
   // variable
   const bodyContent = CONTENT_PAGE.sample.body;
   const buttonContent = CONTENT_PAGE.sample.button;
-  // functions
+
+  /* functions */
   const onClickRouteToMain = useCallback(() => {
     router.push('/');
   }, []);
