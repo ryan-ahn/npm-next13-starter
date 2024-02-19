@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { ISampleLayout } from '@interface/layout';
+import { IRedirectLayout } from '@interface/layout';
 import { META_PAGE } from '@constants/data/meta';
 
 export const metadata: Metadata = {
@@ -18,6 +18,6 @@ export const metadata: Metadata = {
   },
 };
 
-export default function layout({ children }: ISampleLayout) {
+export default function redirectLayout({ children }: IRedirectLayout) {
   return <>{children}</>;
 }

@@ -1,5 +1,5 @@
 import RedirectContainer from '@containers/redirect';
 
-export default function Home() {
+export default function redirectPage() {
   return <RedirectContainer />;
 }

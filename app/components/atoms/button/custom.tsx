@@ -12,19 +12,19 @@ export default function customButton({
 }: IAtomsCustomButtonProps) {
   /* default render */
   return (
-    <Wrapper>
-      <ContentBox $color={color} onClick={onClickFunction}>
+    <StyledWrapper>
+      <StyledContentBox $color={color} onClick={onClickFunction}>
         <p>{text}</p>
-      </ContentBox>
-    </Wrapper>
+      </StyledContentBox>
+    </StyledWrapper>
   );
 }
 
-const Wrapper = styled.button`
+const StyledWrapper = styled.button`
   position: relative;
 `;
 
-const ContentBox = styled.div<ICustomButtonContentBox>`
+const StyledContentBox = styled.div<ICustomButtonContentBox>`
   ${() => flexSet('center', 'center', 'row')};
   ${() => boxSet('auto', 'auto', '50px')};
   ${props => colorSet('white', props.$color)};

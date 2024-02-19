@@ -5,8 +5,35 @@ import { IDataStoreState } from '@interface/store';
 const useDataStore = create<IDataStoreState>()(
   devtools(
     set => ({
-      count: 1,
-      setCount: payload => set(state => ({ count: state.count + payload })),
+      isMember: false,
+      setIsMember: () =>
+        set({
+          isMember: false,
+          isLoadingMemberCheck: false,
+          isFetchedMemberCheck: false,
+        }),
+      isLoadingMemberCheck: false,
+      isFetchedMemberCheck: false,
+      getDataMemberCheck: async () => {
+        try {
+          set(() => ({
+            isLoadingMemberCheck: true,
+          }));
+          // api
+          set(() => ({
+            isMember: true,
+            isLoadingMemberCheck: false,
+            isFetchedMemberCheck: true,
+          }));
+        } catch (error: any) {
+          set(() => ({
+            isMember: false,
+            isLoadingMemberCheck: false,
+            isFetchedMemberCheck: false,
+          }));
+          throw Error(error.message);
+        }
+      },
     }),
     { name: 'dataStore' },
   ),

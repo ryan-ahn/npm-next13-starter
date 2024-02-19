@@ -6,6 +6,11 @@ export interface IAtomsCustomButtonProps {
   onClickFunction: () => void;
 }
 
+export interface IAtomsCustomTitleProps {
+  title: string;
+  description: string;
+}
+
 export interface IMoleculesGnbNavigatorProps {
   rightText: string;
   leftIcon: TIconName;

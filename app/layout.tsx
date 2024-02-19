@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Registry } from '@styles/registry';
 import { IRootLayout } from '@interface/layout';
 import { META_PAGE } from '@constants/data/meta';
-import Wrapper from '@containers/wrapper/page';
+import RootWrapper from '@containers/wrapper/root';
 import Gnb from '@containers/common/page/gnb';
 
 export const metadata: Metadata = {
@@ -27,10 +27,10 @@ export default function rootLayout({ children }: IRootLayout) {
     <html lang="ko">
       <body>
         <Registry>
-          <Wrapper>
+          <RootWrapper>
             <Gnb />
             {children}
-          </Wrapper>
+          </RootWrapper>
         </Registry>
       </body>
     </html>

@@ -1,6 +1,6 @@
 export interface IAuthStoreState {
   isLoggedIn: boolean;
-  userDetail: any | null;
+  userDetail: string | null;
   isLoadingUserSignIn: boolean;
   isFetchedUserSignIn: boolean;
   isLoadingUserSignOut: boolean;
@@ -13,6 +13,9 @@ export interface IAuthStoreState {
 }
 
 export interface IDataStoreState {
-  count: number;
-  setCount: (payload: number) => void;
+  isMember: boolean;
+  setIsMember: any;
+  isLoadingMemberCheck: boolean;
+  isFetchedMemberCheck: boolean;
+  getDataMemberCheck: () => Promise<void>;
 }

@@ -5,7 +5,7 @@ export const META_PAGE = {
     keywords: ['라이언', '사이트', '개인페이지', '홈'],
     ogImage: '',
   },
-  sample: {
+  content: {
     title: '샘플 페이지',
     description: '샘플페이지 상세 정보',
     keywords: ['라이언', '사이트', '개인페이지', '샘플'],

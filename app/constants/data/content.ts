@@ -11,12 +11,12 @@ export const CONTENT_PAGE = {
   main: {
     body: 'NEXT13\nSTARTER',
     button: {
-      text: '샘플 페이지로!',
+      text: '콘텐츠 페이지로!',
       color: '#000000',
     },
   },
-  sample: {
-    body: 'SAMPLE\nPAGE',
+  content: {
+    body: 'CONTENTS',
     button: {
       text: '메인으로!',
       color: '#000000',
