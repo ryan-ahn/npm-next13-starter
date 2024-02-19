@@ -1,5 +1,5 @@
 export interface ICustomButtonContentBox {
-  attrWidth: string;
-  attrHeight: string;
-  attrColor: string;
+  $width: string;
+  $height: string;
+  $color: string;
 }

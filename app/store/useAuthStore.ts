@@ -1,15 +1,15 @@
 import { create } from 'zustand';
 import { devtools } from 'zustand/middleware';
-import { IDataStoreState } from '@interface/store';
+import { IAuthStoreState } from '@interface/store';
 
-const useDataStore = create<IDataStoreState>()(
+const useAuthStore = create<IAuthStoreState>()(
   devtools(
     set => ({
       count: 1,
       setCount: payload => set(state => ({ count: state.count + payload })),
     }),
-    { name: 'dataStore' },
+    { name: 'authStore' },
   ),
 );
 
-export default useDataStore;
+export default useAuthStore;

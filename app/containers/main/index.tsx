@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { flexSet, boxSet, colorSet, fontSet } from '@styles/mixin';
+// import { useAuthStore, useDataStore } from '@store/index';
 import { CONTENT_PAGE } from '@constants/data/content';
 
 export default function page() {

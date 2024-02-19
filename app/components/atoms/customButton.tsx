@@ -13,7 +13,7 @@ export default function CustomButton({
 }: ICustomButtonProps) {
   return (
     <Wrapper>
-      <ContentBox attrWidth={width} attrHeight={height} attrColor={color}>
+      <ContentBox $width={width} $height={height} $color={color}>
         <p>{text}</p>
       </ContentBox>
     </Wrapper>
@@ -24,8 +24,8 @@ const Wrapper = styled.button``;
 
 const ContentBox = styled.div<ICustomButtonContentBox>`
   ${() => flexSet('center', 'center', 'row')};
-  ${props => boxSet(props.attrWidth, props.attrHeight, '20px')};
-  ${props => colorSet('white', props.attrColor)};
+  ${props => boxSet(props.$width, props.$height, '20px')};
+  ${props => colorSet('white', props.$color)};
   & > p {
     ${() => fontSet(14, 400, 20)};
   }
