@@ -40,7 +40,7 @@
 ## Getting Started
 ### 1) Installation
 ```shell
-npx react18-starter my-project
+npx next13-starter my-project
 cd my-project
 npm install
 ```

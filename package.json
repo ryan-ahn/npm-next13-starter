@@ -5,11 +5,14 @@
     "email": "kaaiinn4@gmail.com",
     "url": "https://github.com/ryan-ahn"
   },
+  "license": "MIT",
+  "description": "Start a Next13 Zustand TypeScript project in few second!",
+  "version": "1.0.1",
+  "private": true,
   "engines": {
     "node": "v18.18.2"
   },
-  "version": "0.1.0",
-  "private": true,
+  "bin": "./bin/npm.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
