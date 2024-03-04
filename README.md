@@ -1,10 +1,12 @@
 # Ryan's Next13 Awesome Starter
 
+
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
 ![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/npm-next13-starter)
 
 ## Features
+
 - [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Turbo)
 - [x] 🗝️&nbsp;&nbsp;Typed Programming (Typescript)
 - [x] 🧩&nbsp;&nbsp;SSR & Page Transition (Next13)
@@ -20,12 +22,14 @@
 - [ ] 📱&nbsp;&nbsp;Check Device
 
 ## Frameworks
+
 - **Bundler** : Turbo
 - **SSR** : Next3
 - **Core** : React18
 - **Store** : Zustand
 
 ## Code Structure
+
 - **Static(public)**
 - **Root(app)** <br/>
 - ⎣&nbsp;**components** - atomic stateless components <br/>
@@ -38,16 +42,22 @@
 
 
 ## Getting Started
+
 ### 1) Installation
+
 ```shell
 npx next13-starter my-project
 cd my-project
 ```
+
 ### 2) Run Project
+
 ```shell
 npm run dev
 ```
+
 ### 3) Run Deploy
+
 ```shell
 npm run build
 ```
