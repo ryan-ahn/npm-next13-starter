@@ -17,12 +17,13 @@
     "prettier",
     "boilerplate"
   ],
-  "version": "1.0.2",
+  "version": "1.0.4",
+  "type": "module",
   "private": false,
   "engines": {
     "node": "v18.18.2"
   },
-  "bin": "./bin/npm.js",
+  "bin": "./bin/npm.ts",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

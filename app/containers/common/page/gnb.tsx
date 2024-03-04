@@ -31,7 +31,7 @@ export default function gnb() {
   /* default render */
   return (
     <MoleculesNavigatorGnb
-      rightText={userDetail}
+      rightText={userDetail ? userDetail : ''}
       leftIcon={content.leftIcon as TIconName}
       rightIcon={
         isLoggedIn
