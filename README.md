@@ -42,7 +42,6 @@
 ```shell
 npx next13-starter my-project
 cd my-project
-npm install
 ```
 ### 2) Run Project
 ```shell
