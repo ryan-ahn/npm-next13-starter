@@ -1,7 +1,9 @@
 {
-  "name": "boilerplate-next13-view",
+  "name": "next13-starter",
   "author": {
-    "name": "github.com/ryan-ahn"
+    "name": "ryan-ahn",
+    "email": "kaaiinn4@gmail.com",
+    "url": "https://github.com/ryan-ahn"
   },
   "engines": {
     "node": "v18.18.2"
@@ -12,7 +14,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "deploy": "vercel deploy",
     "lint": "next lint"
   },
   "dependencies": {

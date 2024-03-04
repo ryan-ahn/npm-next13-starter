@@ -2,7 +2,7 @@
 
 ![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/boilerplate-next13-client)
+![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/npm-next13-starter)
 
 ## Features
 - [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Turbo)
@@ -28,20 +28,20 @@
 ## Code Structure
 - **Static(public)**
 - **Root(app)** <br/>
-- ⎣&nbsp;**components** - stateless components <br/>
+- ⎣&nbsp;**components** - atomic stateless components <br/>
 - ⎣&nbsp;**config** - configure <br/>
 - ⎣&nbsp;**constants** - static data <br/>
 - ⎣&nbsp;**containers** - stateful components <br/>
 - ⎣&nbsp;**interface** - interfaces <br/>
 - ⎣&nbsp;**libs** - store, hooks, utils <br/>
-- ⎣&nbsp;**styles** - 스타일 모음<br/>
+- ⎣&nbsp;**styles** - style set<br/>
 
 
 ## Getting Started
 ### 1) Installation
 ```shell
-git clone ryan-ahn/boilerplate-next13-client
-cd ryan-ahn/boilerplate-next13-client
+npx react18-starter my-project
+cd my-project
 npm install
 ```
 ### 2) Run Project
@@ -50,27 +50,24 @@ npm run dev
 ```
 ### 3) Run Deploy
 ```shell
-npm run deploy
+npm run build
 ```
 
 ## Using with Store
 
 ```javascript
-// 스토어 불러오기
+// user store
 import { useDataStore } from '@store/index';
 
-// 구조 분해 할당 사용
 const { data, setData } = useStore();
-</script>
 ```
 
 ## Using with Mixin
 
 ```javascript
-// 믹스인 불러오기
+// use mixin
 import { flexSet, boxSet, colorSet, backgroundSet, fontSet } from '@styles/mixin';
 
-// 세트 사용(코드 참조)
 const Style = styled.div`
   ${() => theme.flexSet('center', 'center', 'column')};
   ${() => theme.boxSet('00px', '00px', '00px')};
