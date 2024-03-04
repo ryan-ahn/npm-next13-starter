@@ -8,7 +8,7 @@
   "license": "MIT",
   "description": "Start a Next13 Zustand TypeScript project in few second!",
   "version": "1.0.1",
-  "private": true,
+  "private": false,
   "engines": {
     "node": "v18.18.2"
   },
