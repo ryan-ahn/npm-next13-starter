@@ -7,7 +7,17 @@
   },
   "license": "MIT",
   "description": "Start a Next13 Zustand TypeScript project in few second!",
-  "version": "1.0.1",
+  "keywords": [
+    "react",
+    "next13",
+    "nextjs",
+    "zustand",
+    "styled-components",
+    "eslint",
+    "prettier",
+    "boilerplate"
+  ],
+  "version": "1.0.2",
   "private": false,
   "engines": {
     "node": "v18.18.2"
