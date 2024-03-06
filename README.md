@@ -1,10 +1,6 @@
 # Ryan's Next13 Awesome Starter
 
 
-![Author](https://img.shields.io/badge/Author-ryan-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-![Last Commit](https://img.shields.io/github/last-commit/ryan-ahn/npm-next13-starter)
-
 ## Features
 
 - [x] ⚙️&nbsp;&nbsp;Small & Fast Bundler (Turbo)
@@ -24,7 +20,7 @@
 ## Frameworks
 
 - **Bundler** : Turbo
-- **SSR** : Next3
+- **SSR** : Next13
 - **Core** : React18
 - **Store** : Zustand
 
