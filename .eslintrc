@@ -1,12 +1,8 @@
 {
   "root": true,
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "import",
-    "newline",
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "import", "newline", "prettier"],
+
   "parserOptions": {
     "project": "./tsconfig.json",
     "createDefaultProgram": true
@@ -16,9 +12,7 @@
     "node": true,
     "es6": true
   },
-  "ignorePatterns": [
-    "node_modules/"
-  ],
+  "ignorePatterns": ["node_modules/"],
   "extends": [
     "airbnb-typescript",
     "next/core-web-vitals",
@@ -48,36 +42,20 @@
       }
     ],
     // 세미 콜론
-    "semi": [
-      2,
-      "always"
-    ],
-    "semi-style": [
-      "error",
-      "last"
-    ],
+    "semi": [2, "always"],
+    "semi-style": ["error", "last"],
     // 파일명 이슈 해결
     "react/jsx-filename-extension": [
       "warn",
       {
-        "extensions": [
-          ".js",
-          ".ts",
-          ".tsx"
-        ]
+        "extensions": [".js", ".ts", ".tsx"]
       }
     ],
     // import 순서
     "import/order": [
       "error",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "parent",
-          "sibling",
-          "index"
-        ],
+        "groups": ["builtin", "external", "parent", "sibling", "index"],
         "pathGroups": [
           {
             "pattern": "@styles/**",
